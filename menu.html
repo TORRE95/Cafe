@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="estiloMenu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="header">
+            <div class="titulo">
+            	<i class="fas fa-arrow-left fa-2x" onclick="goBack()"></i>
+                <h2>CafiApp</h1>
+			</div>
+			<div class="navbar">
+				<ul>
+					<a href="inicio.html"><li><i class="fas fa-utensils fa-2x"></i></li></a>
+					<a href="pedidos.html"><li><i class="far fa-list-alt fa-2x"></i></li></a>
+					<a href="perfil.html"><li><i class="far fa-user fa-2x"></i></li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="contenido">
+			<div class="item">
+				<div class="fotoItem">
+					<i class="far fa-image fa-3x"></i>
+				</div>
+				<div class="desc">
+					<h3>Torta Hawaiiana</h3>
+					<div style="font-size: 14px; text-align: left; margin-left: 10px;">Torta de jamón con piña y queso</div>
+				</div>
+				<div class="precio">
+					<h3>$32.50</h3>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fotoItem">
+					<i class="far fa-image fa-3x"></i>
+				</div>
+				<div class="desc">
+					<h3>Ensalada César</h3>
+					<div style="font-size: 14px; text-align: left; margin-left: 10px;">Lechuga, Tomate y pollo</div>
+				</div>
+				<div class="precio">
+					<h3>$52.00</h3>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fotoItem">
+					<i class="far fa-image fa-3x"></i>
+				</div>
+				<div class="desc">
+					<h3>Papas a la Francesa</h3>
+					<div style="font-size: 14px; text-align: left; margin-left: 10px;">Papas fritas con sal</div>
+				</div>
+				<div class="precio">
+					<h3>$40.00</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</html>

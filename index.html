@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CafiApp - Bienvenido</title>
+	<script type="text/javascript" src="funciones.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+	<img src="img/logo.png">
+	<h1>Bienvenido a CafiApp</h1>
+
+	<form method="POST">
+		<label>
+		Correo Electrónico:<br>
+		<input type="text" name="mail" required id="mail">
+		</label><br><br>
+		<label>
+			Contraseña:<br>
+			<input type="pass" name="pass" required id="pass">
+		</label><br><br>
+		<input type="submit" name="iniciar" value="Iniciar Sesión" onclick="window.location.assign('dashboard.html');;">
+	</form>
+	<br>
+	<div class="footer">
+		<a href="registro.html">¿No tienes cuenta? ¡Regístrate ahora!</a>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript">window.addEventListener('load', inicioSesion, true);</script>

@@ -1,13 +1,27 @@
-	<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pgb.brewapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
-	<name>ALMATI</name>
-	<description>
-		App de cafeterias
-	</description>
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "org.aninda.areyouclose"
+    versionCode = "10"
+    version     = "1.1.0">
 
-	<author email="seymourbutts@phonegap.com" href="https://phonegap.com">
-	   PhoneGap Team
-	</author>
+<name>ALMATI</name>
 
-	<preference name="phonegap-version" value="cli-6.0.0" />
+<description>
+   App de cafeterias
+</description>
+
+
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/contacts"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/media"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/notification"/>
+
+
+
+<access origin="googleapis.com" subdomains="true"/>
+
 </widget>

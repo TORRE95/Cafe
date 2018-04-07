@@ -1,0 +1,111 @@
+:root{ 
+ 
+  --header: #c61b1b; 
+  --titulo: white; 
+  --texto: white; 
+} 
+
+*{ 
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0px; 
+  padding: 0px; 
+ 
+} 
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none; 
+    color: white; 
+} 
+ 
+.header{ 
+ 
+  position: relative; 
+  width: 100%; 
+  height: 15%; 
+  background: var(--header); 
+  color: white; 
+    margin-bottom: 30px; 
+} 
+.titulo{ 
+  width: 100%; 
+    position: relative; 
+    height: 50%; 
+    top: 10px; 
+     
+} 
+.titulo > i{ 
+    float: left; 
+    position: relative; 
+    width: 10%; 
+    margin-left: 10px; 
+} 
+.titulo > h2{ 
+    float: left; 
+    position: relative; 
+    text-align: center; 
+    width: calc(90% - 10px); 
+    left: -5%; 
+} 
+.producto { 
+    position: relative; 
+    width: 100%; 
+    height: 30px; 
+ 
+} 
+.nombre{ 
+    position: relative; 
+    float: left; 
+    width: 60%; 
+    margin: 10px; 
+    height: 100%; 
+} 
+.carrito{ 
+    position: relative; 
+    top: 15%; 
+    height: 50%; 
+} 
+.cantidad{ 
+    margin: 10px; 
+    position: relative; 
+    float: left; 
+    width: 25%; 
+    height: 100%; 
+} 
+.cantidad > input{ 
+ 
+    position: relative; 
+    width: 80%; 
+    border: none; 
+    border-bottom: solid black; 
+    text-align: center; 
+ 
+} 
+.resumen { 
+    position: relative; 
+ 
+    width: 95%; 
+    margin: 10px; 
+    height: 60px; 
+    border-top: solid var(--header); 
+} 
+.resumen > div{ 
+    position: relative; 
+    float: left; 
+    width: 50%; 
+    margin-top: 10px; 
+    margin-left: 0px; 
+} 
+.precio{ 
+    text-align: right; 
+} 
+.pago{ 
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 50px; 
+    background-color: var(--header); 
+    text-align: center; 
+    font-weight: bolder; 
+    color: var(--texto); 
+    line-height: 50px; 
+} 
+ 

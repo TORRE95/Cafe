@@ -1,0 +1,122 @@
+
+
+:root{
+
+	--header: #c61b1b;
+	--titulo: white;
+	--texto: white;
+}
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	padding: 0px;
+
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+
+	position: relative;
+	width: 100%;
+	height: 15%;
+	background: var(--header);
+	color: white;
+}
+
+.titulo{
+	width: 100%;
+    position: relative;
+    height: 50%;
+    top: 0px;
+    text-align: center;
+}
+.navbar {
+    width: 100%;
+    position: relative;
+    height: 50%;
+}
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+.navbar li{
+    float: left;
+    padding: 2px;
+    width: 110px;
+}
+span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    top: 40%;
+}
+.modulosP{
+    position: relative;
+    background-color: white;
+    width: 98%;
+    height: 10%;
+    margin: 1%;
+    border-radius: 7px;
+    box-shadow:5px 5px 20px grey;  
+    text-align: center;
+    line-height: 180px;
+}
+
+.orden{
+    position: relative;
+    width: 20%;
+    background-color: red;
+    height: 100%;
+    float: left;
+}
+.numero{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    line-height: 100%;
+}
+.hora{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: pink;
+    line-height: 100%;
+}
+.articulos{
+    position: relative;
+    width: 60%;
+    background-color: green;
+    height: 100%;
+    float: left;
+    line-height: 100%;
+
+}
+.articulos>ul{
+    list-style: none;
+    position: relative;
+    top: 20%;
+    font-weight: bolder;
+    font-size: 14;
+}
+.total{
+    position: relative;
+    float: left;
+    width: 20%;
+    background-color: blue;
+    height: 100%;
+    line-height: 100%;
+}
+label{
+    position: relative;
+    top: 40%;
+    font-weight: bolder;
+    font-size: 14;
+}

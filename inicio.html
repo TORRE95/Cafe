@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
-    <link rel="stylesheet" href="estiloInicio.css">
+    <link rel="stylesheet" href="CSS/estiloInicio.css">
+    <link rel="stylesheet" type="text/css" href="CSS/FontAwesome/fontawesome-all.css">
+    <link rel="stylesheet" href="CSS/Fonts/stylesheet.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-
-    <meta http-equiv="Content-Security-Policy" content="default-src https://use.fontawesome.com/releases/v5.0.8/css/all.css; style-src *; font-src *;">
 </head>
 
 <body>
+    <script>
+    window.location.hash = "no-back-button";
+    window.location.hash = "Again-No-back-button"; //again because google chrome don't insert first hash into history
+    window.onhashchange = function() { window.location.hash = "no-back-button"; }
+    </script>
     <div class="contenedor">
         <div class="header">
             <div class="titulo">
@@ -33,54 +38,11 @@
 					<a href="#">Cambiar</a>
 				</div>
 			</div>
-			<div class="cafeterias">
-				<a href="menu.html">
-					<div class="cafe">
-						<div class="fotoCafe">
-							<i class="far fa-image fa-3x"></i>
-						</div>
-						<div class="desc">
-							<h3>Cafeteria #1 </h3>
-							<span>Lunch escolar y más</span>
-						</div>
-						<div class="rate">
-							<h2>4.5</h2>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</a>
-				<a href="menu.html">
-					<div class="cafe">
-						<div class="fotoCafe">
-							<i class="far fa-image fa-3x"></i>
-						</div>
-						<div class="desc">
-							<h3>Cafeteria #2 </h3>
-							<span>Comida Vegana</span>
-						</div>
-						<div class="rate">
-							<h2>4.8</h2>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</a>
-				<a href="menu.html">
-					<div class="cafe">
-						<div class="fotoCafe">
-							<i class="far fa-image fa-3x"></i>
-						</div>
-						<div class="desc">
-							<h3>Cafeteria #31 </h3>
-							<span>Hambruguesas y snacks</span>
-						</div>
-						<div class="rate">
-							<h2>3.2</h2>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</a>
-			</div>
+			<section class="cafeterias">
+				
+			</section>
 		</div>
 	</div>
+	<script type="text/javascript">window.addEventListener('load', cargarCafeterias, true);</script>
 </body>
 </html>

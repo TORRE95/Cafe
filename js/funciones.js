@@ -11,7 +11,7 @@ function registrar() {
 	
 	
 			registroAjax = new XMLHttpRequest();
-			registroAjax.open('GET', "http://snackapp1.000webhostapp.com/registrarUsuarios.php?nombre="+nombre+"&mail="+mail+"&pass="+pass1);
+			registroAjax.open('GET', "https://snackapp1.000webhostapp.com/registrarUsuarios.php?nombre="+nombre+"&mail="+mail+"&pass="+pass1);
 			registroAjax.send();
 			alert("¡Registrado exitosamente!");
 
@@ -39,7 +39,7 @@ function inicioSesion() {
 	var pass = document.getElementById('pass').value;
 	if(mail != "" && pass != ""){
 		inicioAjax = new XMLHttpRequest();
-		inicioAjax.open('GET', 'http://snackapp1.000webhostapp.com/selectUsuarios.php?mail='+mail+'&pass='+pass);
+		inicioAjax.open('GET', 'https://snackapp1.000webhostapp.com/selectUsuarios.php?mail='+mail+'&pass='+pass);
 		inicioAjax.send();
 		alert("Iniciando Sesion");
 		
@@ -66,7 +66,7 @@ function inicioSesion() {
 
 function orden() {
 	var id = localStorage.getItem('idUsuario');
-	var url = "http://snackapp1.000webhostapp.com/ordenCafe.php?usuario="+id;
+	var url = "https://snackapp1.000webhostapp.com/ordenCafe.php?usuario="+id;
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);
@@ -100,7 +100,7 @@ function agregarProducto() {
 	var nombre = document.getElementById('nombreP').value;
 	var precio = document.getElementById('precio').value;
 	var descripcion = document.getElementById('descripcion').value;
-	var url = "http://snackapp1.000webhostapp.com/agregarProducto.php?nombre="+nombre+"&precio="+precio+"&descripcion="+descripcion+"&id="+id;
+	var url = "https://snackapp1.000webhostapp.com/agregarProducto.php?nombre="+nombre+"&precio="+precio+"&descripcion="+descripcion+"&id="+id;
 	if(nombre != "" && precio != "" && descripcion != ""){
 		productoAjax = new XMLHttpRequest();
 		productoAjax.open("GET", url);
@@ -121,7 +121,7 @@ function agregarProducto() {
 
 function getCorreo() {
 	var id = localStorage.getItem("idUsuario");
-	var url = "http://snackapp1.000webhostapp.com/getDatosUser.php?idUser="+id;
+	var url = "https://snackapp1.000webhostapp.com/getDatosUser.php?idUser="+id;
 	datosUserAjax = new XMLHttpRequest();
 	datosUserAjax.open("GET", url);
 	datosUserAjax.send();
@@ -149,7 +149,7 @@ function updatePerfil() {
 	var id = localStorage.getItem("idUsuario");
 	var nombreUser = document.getElementById("nombre").value;
 	var tel = document.getElementById("tel").value;
-	var url = "http://snackapp1.000webhostapp.com/updateUsuarios.php?nombreUser="+nombreUser+"&tel="+tel+"&id="+id;
+	var url = "https://snackapp1.000webhostapp.com/updateUsuarios.php?nombreUser="+nombreUser+"&tel="+tel+"&id="+id;
 	if(nombreUser != "" && tel != ""){
 		updateAjax = new XMLHttpRequest();
 		updateAjax.open("GET", url);
@@ -168,7 +168,7 @@ function updatePerfil() {
 
 function pedidos() {
 	var id = localStorage.getItem('idUsuario');
-	var url = "http://snackapp1.000webhostapp.com/orden.php?usuario="+id;
+	var url = "https://snackapp1.000webhostapp.com/orden.php?usuario="+id;
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);
@@ -202,7 +202,7 @@ function pedidos() {
 function cargarCafeterias(){
 
 	cafeAjax = new XMLHttpRequest();
-	cafeAjax.open('GET', "http://snackapp1.000webhostapp.com/selectCafeterias.php");
+	cafeAjax.open('GET', "https://snackapp1.000webhostapp.com/selectCafeterias.php");
 	cafeAjax.send();
 	cafeAjax.onreadystatechange = function(){
 		if (cafeAjax.readyState == 4 && cafeAjax.status == 200) {
@@ -247,7 +247,7 @@ function menu(idCafe){
 function cargarMenu(){
 	var idCafe = localStorage.getItem('idCafeteria');
 	menuAjax = new XMLHttpRequest();
-	menuAjax.open('GET', "http://snackapp1.000webhostapp.com/selectMenu.php?id="+idCafe);
+	menuAjax.open('GET', "https://snackapp1.000webhostapp.com/selectMenu.php?id="+idCafe);
 	menuAjax.send();
 
 	
@@ -292,7 +292,7 @@ function registrar() {
 	
 	
 			registroAjax = new XMLHttpRequest();
-			registroAjax.open('GET', "http://snackapp1.000webhostapp.com/registrarUsuarios.php?nombre="+nombre+"&mail="+mail+"&pass="+pass1);
+			registroAjax.open('GET', "https://snackapp1.000webhostapp.com/registrarUsuarios.php?nombre="+nombre+"&mail="+mail+"&pass="+pass1);
 			registroAjax.send();
 			alert("¡Registrado exitosamente!");
 
@@ -320,7 +320,7 @@ function inicioSesion() {
 	var pass = document.getElementById('pass').value;
 	if(mail != "" && pass != ""){
 		inicioAjax = new XMLHttpRequest();
-		inicioAjax.open('GET', 'http://snackapp1.000webhostapp.com/selectUsuarios.php?mail='+mail+'&pass='+pass);
+		inicioAjax.open('GET', 'https://snackapp1.000webhostapp.com/selectUsuarios.php?mail='+mail+'&pass='+pass);
 		inicioAjax.send();
 		alert("Iniciando Sesion");
 		
@@ -347,7 +347,7 @@ function inicioSesion() {
 
 function orden() {
 	var id = localStorage.getItem('idUsuario');
-	var url = "http://snackapp1.000webhostapp.com/ordenCafe.php?usuario="+id;
+	var url = "https://snackapp1.000webhostapp.com/ordenCafe.php?usuario="+id;
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);
@@ -381,7 +381,7 @@ function agregarProducto() {
 	var nombre = document.getElementById('nombreP').value;
 	var precio = document.getElementById('precio').value;
 	var descripcion = document.getElementById('descripcion').value;
-	var url = "http://snackapp1.000webhostapp.com/agregarProducto.php?nombre="+nombre+"&precio="+precio+"&descripcion="+descripcion+"&id="+id;
+	var url = "https://snackapp1.000webhostapp.com/agregarProducto.php?nombre="+nombre+"&precio="+precio+"&descripcion="+descripcion+"&id="+id;
 	if(nombre != "" && precio != "" && descripcion != ""){
 		productoAjax = new XMLHttpRequest();
 		productoAjax.open("GET", url);
@@ -402,7 +402,7 @@ function agregarProducto() {
 
 function getCorreo() {
 	var id = localStorage.getItem("idUsuario");
-	var url = "http://snackapp1.000webhostapp.com/getDatosUser.php?idUser="+id;
+	var url = "https://snackapp1.000webhostapp.com/getDatosUser.php?idUser="+id;
 	datosUserAjax = new XMLHttpRequest();
 	datosUserAjax.open("GET", url);
 	datosUserAjax.send();
@@ -430,7 +430,7 @@ function updatePerfil() {
 	var id = localStorage.getItem("idUsuario");
 	var nombreUser = document.getElementById("nombre").value;
 	var tel = document.getElementById("tel").value;
-	var url = "http://snackapp1.000webhostapp.com/updateUsuarios.php?nombreUser="+nombreUser+"&tel="+tel+"&id="+id;
+	var url = "https://snackapp1.000webhostapp.com/updateUsuarios.php?nombreUser="+nombreUser+"&tel="+tel+"&id="+id;
 	if(nombreUser != "" && tel != ""){
 		updateAjax = new XMLHttpRequest();
 		updateAjax.open("GET", url);
@@ -449,7 +449,7 @@ function updatePerfil() {
 
 function pedidos() {
 	var id = localStorage.getItem('idUsuario');
-	var url = "http://snackapp1.000webhostapp.com/orden.php?usuario="+id;
+	var url = "https://snackapp1.000webhostapp.com/orden.php?usuario="+id;
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);
@@ -483,7 +483,7 @@ function pedidos() {
 function cargarCafeterias(){
 
 	cafeAjax = new XMLHttpRequest();
-	cafeAjax.open('GET', "http://snackapp1.000webhostapp.com/selectCafeterias.php");
+	cafeAjax.open('GET', "https://snackapp1.000webhostapp.com/selectCafeterias.php");
 	cafeAjax.send();
 	cafeAjax.onreadystatechange = function(){
 		if (cafeAjax.readyState == 4 && cafeAjax.status == 200) {
@@ -528,7 +528,7 @@ function menu(idCafe){
 function cargarMenu(){
 	var idCafe = localStorage.getItem('idCafeteria');
 	menuAjax = new XMLHttpRequest();
-	menuAjax.open('GET', "http://snackapp1.000webhostapp.com/selectMenu.php?id="+idCafe);
+	menuAjax.open('GET', "https://snackapp1.000webhostapp.com/selectMenu.php?id="+idCafe);
 	menuAjax.send();
 	
 
@@ -560,7 +560,7 @@ function cargarMenu(){
 
 function add(idProducto, precio, nombre){
 	var idUsuario = localStorage.getItem("idUsuario");
-	url = "http://snackapp1.000webhostapp.com/insertCarrito.php?idProducto="+idProducto+"&precio="+precio+"&idUsuario="+idUsuario+"&nombreProducto="+nombre;
+	url = "https://snackapp1.000webhostapp.com/insertCarrito.php?idProducto="+idProducto+"&precio="+precio+"&idUsuario="+idUsuario+"&nombreProducto="+nombre;
 	console.log(url)
 	precioAjax = new XMLHttpRequest();
 	precioAjax.open('GET', url);
@@ -581,7 +581,7 @@ function cargarCarrito(){
 	var suma = 0;
 	var descripcion = "";
 	carritoAjax = new XMLHttpRequest();
-	carritoAjax.open('GET', "http://snackapp1.000webhostapp.com/cargarCarrito.php?id="+idUsuario);
+	carritoAjax.open('GET', "https://snackapp1.000webhostapp.com/cargarCarrito.php?id="+idUsuario);
 	carritoAjax.send();
 	carritoAjax.onreadystatechange = function(){
 		if (carritoAjax.readyState == 4 && carritoAjax.status == 200) {
@@ -626,7 +626,7 @@ function insertarOrden(){
 	var descripcion = localStorage.getItem("descripcion");
 	var idCafeteria = localStorage.getItem("idCafeteria");
 	var idUsuario = localStorage.getItem("idUsuario");
-	url = "http://snackapp1.000webhostapp.com/insertarOrden.php?idUsuario="+idUsuario+"&idCafeteria="+idCafeteria+"&suma="+suma+"&descripcion="+descripcion;
+	url = "https://snackapp1.000webhostapp.com/insertarOrden.php?idUsuario="+idUsuario+"&idCafeteria="+idCafeteria+"&suma="+suma+"&descripcion="+descripcion;
 	ordenAjax = new XMLHttpRequest();
 	ordenAjax.open('GET', url);
 	ordenAjax.send();
@@ -645,7 +645,7 @@ function insertarOrden(){
 function exito(){
 	var num = "#58";
 	var id = localStorage.getItem('idUsuario');
-	var url = "http://snackapp1.000webhostapp.com/orden.php?usuario="+id;
+	var url = "https://snackapp1.000webhostapp.com/orden.php?usuario="+id;
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);

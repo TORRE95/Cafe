@@ -6,7 +6,7 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>RATE-ME</name>
+    <name>SnackApp</name>
 
     <description>
         SnackApp - Ordena en tu cafeteria escolar

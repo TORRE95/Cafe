@@ -596,21 +596,20 @@ function cargarCarrito(){
 								carrito[i].nombre+
 							"</div>"+
 							"<div class='cantidad'>"+
-								"<input type='number' value='"+carrito[i].cantidad+"' disabled>"+
+								"<div class='precio'>"+
+									"$"+carrito[i].precio+
+								"</div>"+
 								"<input type='hidden' value='"+carrito[i].idCarrito+"/"+i+"'>"+
 							"</div>"+
 						"</div>"+
-					"</div>"+
-					"<div class='resumen'>"+
-						"<div class='total'>"+
-							"PARCIAL"+
-						"</div>"+
-						"<div class='precio'>"+
-							"$"+carrito[i].precio+
-						"</div>"+
 					"</div>";
 				document.querySelector('section').innerHTML += info;
-				document.querySelector('article').innerHTML = "TOTAL<br>$"+suma+".00";
+				document.querySelector('article').innerHTML = "<div class='total'> TOTAL<br>$"+suma+".00</div>";
+				document.querySelector('article').innerHTML += "<a href='pago.html'>"+
+        															"<div class='pago'>"+
+            															"PAGAR"+
+        															"</div>"+
+    															"</a>";
 				localStorage.setItem("suma", suma);
 				localStorage.setItem("descripcion", descripcion);
 			}

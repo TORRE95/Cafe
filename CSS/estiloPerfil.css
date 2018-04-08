@@ -1,11 +1,12 @@
-
-
 :root{
 
-	--header: #c61b1b;
-	--titulo: white;
-	--texto: white;
+  --header: #7C0A02;
+  --titulo: white;
+  --texto: white;
+  --texto: white;
 }
+
+
 *{
 	font-family: 'Montserrat', sans-serif;
 	margin: 0px;
@@ -19,11 +20,14 @@ a:link, a:visited, a:hover, a:active {
 
 .header{
 
-	position: relative;
-	width: 100%;
-	height: 15%;
-	background: var(--header);
-	color: white;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  background: var(--header);
+  color: white;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
 }
 
 .titulo{
@@ -83,8 +87,10 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--header);
+  color: #B39700;
+  font-size: 16;
+  font-weight: bold;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -92,8 +98,10 @@ input[type=submit] {
   float: right;
 }
 button{
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--header);
+  color: #B39700;
+  font-weight: bold;
+  font-size: 16;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;

@@ -1,4 +1,9 @@
+:root{
 
+	--header: #7C0A02;
+	--titulo: white;
+	--texto: white;
+}
 
 *{
 	font-family: 'Montserrat', sans-serif;
@@ -24,17 +29,17 @@ html{
 body{
 	height: 100%;
 	color: white;
-	 background: linear-gradient(to bottom, #ce0606, #c61b1b, #a52a2a);
+	 background: linear-gradient(to bottom, #9b0c02, #7C0A02, 	#5d0701);
 }
 h1{
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 10%;
 }
 
 form{
 	margin-left: 30%;
 	position: relative;
-	margin-top: 10%;
+	margin-top: 20%;
 
 }
 input{

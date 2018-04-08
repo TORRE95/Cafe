@@ -1,9 +1,9 @@
-:root{ 
- 
-  --header: #c61b1b; 
-  --titulo: white; 
-  --texto: white; 
-} 
+:root{
+
+    --header: #7C0A02;
+    --titulo: white;
+    --texto: white;
+}
 
 *{ 
   font-family: 'Montserrat', sans-serif; 
@@ -16,15 +16,17 @@ a:link, a:visited, a:hover, a:active {
     color: white; 
 } 
  
-.header{ 
- 
-  position: relative; 
-  width: 100%; 
-  height: 15%; 
-  background: var(--header); 
-  color: white; 
-    margin-bottom: 30px; 
-} 
+.header{
+
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background: var(--header);
+    color: white;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+}
 .titulo{ 
   width: 100%; 
     position: relative; 
@@ -51,6 +53,12 @@ a:link, a:visited, a:hover, a:active {
     height: 30px; 
  
 } 
+
+.contenedor{
+    position: relative;
+    border-bottom: solid;
+    border-color: black; 
+}
 .nombre{ 
     position: relative; 
     float: left; 
@@ -60,8 +68,8 @@ a:link, a:visited, a:hover, a:active {
 } 
 .carrito{ 
     position: relative; 
-    top: 15%; 
-    height: 50%; 
+    top: 1%; 
+    height: 10%; 
 } 
 .cantidad{ 
     margin: 10px; 
@@ -80,7 +88,6 @@ a:link, a:visited, a:hover, a:active {
  
 } 
 .resumen { 
-    position: relative; 
  
     width: 95%; 
     margin: 10px; 
@@ -97,8 +104,7 @@ a:link, a:visited, a:hover, a:active {
 .precio{ 
     text-align: right; 
 } 
-.pago{ 
-    position: absolute; 
+.pago{  
     bottom: 0px; 
     width: 100%; 
     height: 50px; 
@@ -106,6 +112,15 @@ a:link, a:visited, a:hover, a:active {
     text-align: center; 
     font-weight: bolder; 
     color: var(--texto); 
-    line-height: 50px; 
+    line-height: 50px;
+    color: #FFD700;
 } 
- 
+
+.total{
+    font-weight: bolder;
+    color: black;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 20px;    
+    padding-bottom: 10px;
+ }

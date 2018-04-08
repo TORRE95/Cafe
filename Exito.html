@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="estiloPago.css">
+    <link rel="stylesheet" href="CSS/estiloPago.css">
     <link rel="stylesheet" type="text/css" href="CSS/FontAwesome/fontawesome-all.css">
     <link rel="stylesheet" href="CSS/Fonts/stylesheet.css">
     <script type="text/javascript" src="js/funciones.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src https://use.fontawesome.com/releases/v5.0.8/css/all.css; style-src *; font-src *;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src *; font-src *; connect-src *">
 </head>
 
 <body onload="exito();">
@@ -20,12 +20,13 @@
         <div class="contenedor">
             <div class="header">
                 <div class="titulo">
-                    <i class="fas fa-arrow-left fa-2x" onclick="goBack()"></i>
                     <h2>Pago</h1>
                 </div>
             </div>
             <div class="exito">
-                <label>Tu pedido ha sido procesado con exito </label>
+                <label>Tu pedido ha sido procesado con exito</label>
+                <br><br><br><br>
+                <label>Numero de Orden</label>
                 <section>1</section>
             </div>
             <a href="inicio.html">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pago</title>
-    <link rel="stylesheet" href="estiloPago.css">
+    <link rel="stylesheet" href="CSS/estiloPago.css">
     <link rel="stylesheet" href="CSS/FontAwesome/fontawesome-all.css">
     <link rel="stylesheet" href="CSS/Fonts/stylesheet.css">
     <script type="text/javascript" src="js/funciones.js"></script>
@@ -12,16 +12,16 @@
 </head>
 
 <body>
-	<script>
+    <script>
     window.location.hash = "no-back-button";
     window.location.hash = "Again-No-back-button"; //again because google chrome don't insert first hash into history
     window.onhashchange = function() { window.location.hash = "no-back-button"; }
     </script>
-		<div class="contenedor">
-			<div class="header">
-				<div class="titulo">
-					<i class="fas fa-arrow-left fa-2x" onclick="goBack()"></i>
-					<h2>Pago</h1>
+    <div class="contenedor">
+        <div class="header">
+            <div class="titulo">
+                <i class="fas fa-arrow-left fa-2x" onclick="goBack()"></i>
+                <h2>Pago</h1>
 				</div>
 			</div>
 			<div class="pago">
@@ -67,10 +67,16 @@
 						CCV<br>
 						<input type="number" name="cv" required  minlength="3" maxlength="3"><br>
 					</label><br><br>
-					<input type="submit" name="agregar" value="Pagar" onclick="insertarOrden();">
+					<input type="submit" name="agregar" value="Pagar" onclick="insertarOrden();" style="color: #B39700;
+    font-weight: bolder; font-size: 16;">
 				</form>
 			</div>
 		</div>
+		<script>
+			function goBack() {
+    			window.history.back();
+			}
+		</script>
 	</body>
 	
 </html>

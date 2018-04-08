@@ -1,7 +1,6 @@
-
 :root{
 
-	--header: #c61b1b;
+	--header: #7C0A02;
 	--titulo: white;
 	--texto: white;
 }
@@ -23,6 +22,9 @@ a:link, a:visited, a:hover, a:active {
 	height: 15%;
 	background: var(--header);
 	color: white;
+	-webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
 }
 
 .titulo{

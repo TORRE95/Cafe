@@ -1,10 +1,8 @@
-
-
 :root{
 
-	--header: #c61b1b;
-	--titulo: white;
-	--texto: white;
+    --header: #7C0A02;
+    --titulo: white;
+    --texto: white;
 }
 *{
 	font-family: 'Montserrat', sans-serif;
@@ -19,11 +17,14 @@ a:link, a:visited, a:hover, a:active {
 
 .header{
 
-	position: relative;
-	width: 100%;
-	height: 15%;
-	background: var(--header);
-	color: white;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background: var(--header);
+    color: white;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.6);
 }
 
 .titulo{
@@ -61,7 +62,7 @@ span {
     position: relative;
     background-color: white;
     width: 98%;
-    height: 10%;
+    height: 12%;
     margin: 1%;
     border-radius: 7px;
     box-shadow:5px 5px 20px grey;  
@@ -71,8 +72,8 @@ span {
 
 .orden{
     position: relative;
-    width: 20%;
-    background-color: red;
+    width: 25%;
+    background-color: white;
     height: 100%;
     float: left;
 }
@@ -80,23 +81,24 @@ span {
     position: relative;
     width: 100%;
     height: 50%;
-    background-color: yellow;
+    background-color: white;
     line-height: 100%;
 }
 .hora{
     position: relative;
     width: 100%;
-    height: 50%;
-    background-color: pink;
+    background-color: white;
     line-height: 100%;
 }
 .articulos{
     position: relative;
-    width: 60%;
-    background-color: green;
-    height: 100%;
+    width: 50%;
+    background-color: white;
+    height: 95%;
     float: left;
     line-height: 100%;
+    overflow-wrap: break-word;
+    padding: 2px;
 
 }
 .articulos>ul{
@@ -110,7 +112,7 @@ span {
     position: relative;
     float: left;
     width: 20%;
-    background-color: blue;
+    background-color: white;
     height: 100%;
     line-height: 100%;
 }

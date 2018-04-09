@@ -547,7 +547,7 @@ function cargarMenu(){
 						"</div>"+
 						"<div class='precio'>"+
 							"<div class='dinero'><h3>$"+menu[i].Precio+"</h3></div>"+
-							"<div class='agregar'><button onclick=add("+menu[i].idProducto+","+menu[i].Precio+",'"+menu[i].Nombre+"')>Agregar</button></div>"+
+							"<div class='agregar'><button onclick='add("+menu[i].idProducto+","+menu[i].Precio+","+'"'+menu[i].Nombre+'"'+");'"+">Agregar</button></div>"+
 						"</div>"+
 					"</div>";
 				document.querySelector('section').innerHTML += info;

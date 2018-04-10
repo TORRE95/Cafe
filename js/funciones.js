@@ -632,7 +632,7 @@ function insertarOrden(){
 	ordenAjax.onreadystatechange = function(){
 		if (ordenAjax.readyState == 4 && ordenAjax.status == 200) {
 			if (ordenAjax.responseText=="1") {
-				window.location.href = 'exito.html';
+				window.location.href = 'Exito.html';
 			}else{
 				alert("Error inesperado, intente más tarde");
 			}

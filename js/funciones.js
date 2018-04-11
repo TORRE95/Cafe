@@ -199,41 +199,6 @@ function pedidos() {
 
 
 
-function cargarCafeterias(){
-
-	cafeAjax = new XMLHttpRequest();
-	cafeAjax.open('GET', "https://snackapp1.000webhostapp.com/selectCafeterias.php");
-	cafeAjax.send();
-	cafeAjax.onreadystatechange = function(){
-		if (cafeAjax.readyState == 4 && cafeAjax.status == 200) {
-			cafeteria = JSON.parse(cafeAjax.responseText);
-			for (var i = 0; i < cafeteria.length; i++) {
-					var info = 
-						"<a onclick='menu("+cafeteria[i].idUsuario+")'>"+
-							"<div class='cafe'>"+
-								"<div class='fotoCafe'>"+
-									"<i class='far fa-image fa-3x'></i>"+
-								"</div>"+
-								"<div class='desc'>"+
-									"<h3>"+cafeteria[i].Nombre+"</h3>"+"<br>"+
-									"<span>"+cafeteria[i].Descripcion+"</span>"+
-									"</div>"+
-									"<div class='rate'>"+
-										"<h2>"+cafeteria[i].Rate+"</h2>"+
-										"<i class='fas fa-star'></i>"+
-									"</div>"+
-								"</div>"+
-						"</a>";
-				document.querySelector('section').innerHTML += info;
-			}
-			
-			
-		}
-	}
-
-
-}
-
 
 function menu(idCafe){
 
@@ -244,41 +209,6 @@ function menu(idCafe){
 
 }
 
-function cargarMenu(){
-	var idCafe = localStorage.getItem('idCafeteria');
-	menuAjax = new XMLHttpRequest();
-	menuAjax.open('GET', "https://snackapp1.000webhostapp.com/selectMenu.php?id="+idCafe);
-	menuAjax.send();
-
-	
-
-	menuAjax.onreadystatechange = function(){
-		if (menuAjax.readyState == 4 && menuAjax.status == 200) {
-			menu = JSON.parse(menuAjax.responseText);
-			for (var i = 0; i < menu.length; i++) {
-					var info = 
-					"<div class='item'>"+
-						"<div class='fotoItem'>"+
-							"<i class='far fa-image fa-3x'></i>"+
-						"</div>"+
-						"<div class='desc'>"+
-							"<h3>"+menu[i].Nombre+"</h3>"+
-							"<div style='font-size: 14px; text-align: left; margin-left: 10px;'>"+menu[i].Descripcion+"</div>"+
-						"</div>"+
-						"<div class='precio'>"+
-							"<div class='dinero'><h3>$"+menu[i].Precio+"</h3></div>"+
-							"<div class='agregar'><button onclick=carrito("+menu[i].idProducto+")>Agregar</button></div>"+
-						"</div>"+
-					"</div>";
-				document.querySelector('section').innerHTML += info;
-			}
-			
-			
-		}
-	}
-
-
-}
 
 function registrar() {
 	
@@ -539,7 +469,7 @@ function cargarMenu(){
 					var info = 
 					"<div class='item'>"+
 						"<div class='fotoItem'>"+
-							"<i class='far fa-image fa-3x'></i>"+
+							"<img src='"+menu[i].foto+"'>"+
 						"</div>"+
 						"<div class='desc'>"+
 							"<h3>"+menu[i].Nombre+"</h3>"+

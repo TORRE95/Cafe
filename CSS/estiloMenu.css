@@ -84,11 +84,15 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     color: black;
     text-align: center;
+    
 }
-.fotoItem > i{
+
+.fotoItem > img{
     top: 10%;
     position: relative;
-    border-radius: 50px;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 64px;
 }
 .desc{
     float: left;

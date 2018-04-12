@@ -578,7 +578,11 @@ function exito(){
 	var a = new Date();
 	var h = a.getHours();
 	var m = a.getMinutes();
-	var hora = h+':'+(m+30);
+	if((m+40) >= 60){
+		h++;
+		m = (40-(60-m)); 
+	}
+	var hora = h+':'+(m);
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);

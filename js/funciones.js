@@ -423,7 +423,7 @@ function cargarCafeterias(){
 						"<a onclick='menu("+cafeteria[i].idUsuario+")'>"+
 							"<div class='cafe'>"+
 								"<div class='fotoCafe'>"+
-									"<i class='far fa-image fa-3x'></i>"+
+									"<i class='fas fa-coffee fa-3x'></i>"+
 								"</div>"+
 								"<div class='desc'>"+
 									"<h3>"+cafeteria[i].Nombre+"</h3>"+"<br>"+

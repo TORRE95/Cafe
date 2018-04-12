@@ -575,6 +575,10 @@ function exito(){
 	var num = "#58";
 	var id = localStorage.getItem('idUsuario');
 	var url = "https://snackapp1.000webhostapp.com/orden.php?usuario="+id;
+	var a = new Date();
+	var h = a.getHours();
+	var m = a.getMinutes();
+	var hora = h+':'+(m+30);
 	if (id != "") {
 		ordenAjax = new XMLHttpRequest();
 		ordenAjax.open("GET", url);
@@ -583,7 +587,8 @@ function exito(){
 			if (ordenAjax.readyState == 4 && ordenAjax.status == 200) {
 				orden = JSON.parse(ordenAjax.responseText);
 				for (var i = 0; i < orden.length; i++) {
-					var info = 	"<label><b>#58"+orden[i].idOrden+"</b></label>";
+					var info = 	"<label><b>#58"+orden[i].idOrden+"</b></label><br><br><br>"+
+								"<label style='text-align: center;'><b>Tu pedido estará listo a las: "+hora+"</b></label><br><br><br>";
 						document.querySelector('section').innerHTML = info;
 				}	
 			}
